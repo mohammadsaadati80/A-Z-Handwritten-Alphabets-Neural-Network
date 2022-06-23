@@ -14333,16 +14333,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Phase-1:-Data-review-and-preprocessing">Phase 1: Data review and preprocessing<a class="anchor-link" href="#Phase-1:-Data-review-and-preprocessing">&#182;</a></h2><p>Data splitting is an important phase, If we use whole data for both train and test our mesurments may not be precise,
-because there may be overfitting on train data.
-So we can split our data to train/test to handle this challenge, but again there is another problem.
-First of all we have to divide our dataset to two parts trainset and testset so by using <code>train_test_split</code> method of <code>sklearn</code> and setting <code>test_size</code> we'll determine what percentage of our data is for test. For the division <code>train_test_split</code> fucntions from <code>sklearn.model_selection</code> is used which returns 4 dataset likes. Two are for the training data and two are for test data. And the dependent variable which here is the <code>type</code> feature.</p>
-<p>The <code>P</code> ratio depends on lots of metrics but two important metrics to mention are the number of rows in our data and our data itself.
-Assume that we have extremely small data in this situations small p may effect our learning accuracy.
-In larger datasets we can do the split with more confidence. After reading some documents online I came to the understanding that 10% to 30% is a good percentage for test size and by experimenting different values I decided to use the value 20%.</p>
-<p>Another important note to mention is randomness. We must shuffle our data so there is no learning from the sequence of data itself.
-<code>random_state</code> is for getting the same set of data each time so that we don't get different results, meaning it won't give us random data each time. <code>random_state</code> is like the seed that we set for random.</p>
-
+<h2 id="Phase-1:-Data-review-and-preprocessing">Phase 1: Data review and preprocessing<a class="anchor-link" href="#Phase-1:-Data-review-and-preprocessing">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
